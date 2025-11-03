@@ -1,16 +1,13 @@
 ---
-layout: page
+layout: default
 title: "Portfolio"
 permalink: /portfolio/
 ---
 
-<h1>{{ page.title }}</h1>
+# {{ page.title }}
 
-<ul>
-  {% for post in site.categories.portfolio %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <small>({{ post.date | date: "%d %B %Y" }})</small>
-    </li>
-  {% endfor %}
-</ul>
+{% assign portfolio_posts = site.categories.portfolio | sort: 'date' | reverse %}
+
+{% for post in portfolio_posts %}
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%d %B %Y" }}
+{% endfor %}
