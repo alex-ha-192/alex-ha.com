@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "EEESeaBoat"
+author: ""
 date: 2025-06-17 00:00:00 -0000
 categories: portfolio
+tags: [portfolio]
 ---
 
 # EEESeaBoat
