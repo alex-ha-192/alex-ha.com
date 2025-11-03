@@ -1,2 +1,1 @@
-# alex-ha.com
-GitHub Pages site for personal portfolio
+# My portfolio
